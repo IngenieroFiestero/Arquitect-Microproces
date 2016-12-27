@@ -4,5 +4,5 @@
 int main(void){
 	//El hola Mundo
 	printf("Hola Mundo\n");
-    //El /n indica final de linea y vacia el buffer.
+	//El /n indica final de linea y vacia el buffer.
 }

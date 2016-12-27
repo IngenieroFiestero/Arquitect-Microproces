@@ -4,7 +4,7 @@
 int main(void){
 	printf("Sustitucion de caracteres 'a' por 'e' sin usar vectores...\n");
 	char cadenaprima[30];
-    char cadenaOrigin[30];
+	char cadenaOrigin[30];
 	fgets(cadenaOrigin,30,stdin);
 	char *p_vec = cadenaOrigin;
 	char *p_vec2 = cadenaprima;
