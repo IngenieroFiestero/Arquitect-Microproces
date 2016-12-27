@@ -11,5 +11,4 @@ int main(int argc,char *argv[]){
         caracteres += strlen(argv[i]) + 1;//Caracter extra del espacio
     }
     printf("Numero de palabras: %d\nNumero de caracteres: %d\n",argc,caracteres);
-	//El /n indica final de linea y vacia el buffer.
 }
