@@ -29,15 +29,26 @@ unsigned int lee_switches ()
     pulsacion=0;
     switch (pls_estado)
     {
-        case s_pls_reposo: if (dato_leido==1) {pls_estado=s_pls_1; pulsacion=1;}
-        else if (dato_leido==2) {pls_estado=s_pls_2; pulsacion=2;}
-        else if (dato_leido==3) {pls_estado=s_pls_12;pulsacion=3;}
-        break;
-        case s_pls_1: if ((dato_leido!=1)&&(dato_leido!=4)) pls_estado=s_pls_reposo;
-        break;
-        case s_pls_2: if ((dato_leido!=2)&&(dato_leido!=4)) pls_estado=s_pls_reposo;
-        break;
-        case s_pls_12: if (dato_leido==0) pls_estado=s_pls_reposo;
+        case s_pls_reposo: 
+            if (dato_leido==1) {
+                pls_estado=s_pls_1; 
+                pulsacion=1;
+            }else if (dato_leido==2) {
+                pls_estado=s_pls_2; 
+                pulsacion=2;
+            }else if (dato_leido==3) {
+                pls_estado=s_pls_12;
+                pulsacion=3;
+            }
+            break;
+        case s_pls_1: 
+            if ((dato_leido!=1)&&(dato_leido!=4)) pls_estado=s_pls_reposo;
+            break;
+        case s_pls_2: 
+            if ((dato_leido!=2)&&(dato_leido!=4)) pls_estado=s_pls_reposo;
+            break;
+        case s_pls_12: 
+            if (dato_leido==0) pls_estado=s_pls_reposo;
     }
     return pulsacion;
 }
