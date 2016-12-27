@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdio.h>
 main(){ 
      int id, fd[2]; 
      id = fork(); 

@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 main(){ 
      char c;     
      while(read(0,&c,1)!=0)     
